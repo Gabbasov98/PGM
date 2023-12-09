@@ -28,6 +28,21 @@
 <body class="m-page">
 
     <div class="wrapper" style="padding: 50px;">
+        <a href="steam-pay.html" style="display: block; margin-bottom: 20px;">
+            Пополнение баланса steam
+        </a>
+        <a href="steam-pay2.html" style="display: block; margin-bottom: 20px;">
+            Пополнение баланса steam 2
+        </a>
+        <button data-modal="reviewModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Оставить отзыв
+        </button>
+        <button data-modal="thankModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Спасибо!
+        </button>
+
+        <hr style="display: block;margin: 20px 0;">
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -63,6 +78,7 @@
             Как активировать?
         </button>
 
+
     </div>
 
     <div class="modal" id="howActivateModal">
@@ -81,6 +97,71 @@
                 <p>Ghostrunner — эта жестокая игра-слэшер от первого лица с супердинамичным сюжетом, разворачивающимся в мрачном киберпанковом мире футуристической сверхконструкции. Взбирайтесь вверх по башне Дхарма, ставшей последним убежищем человечества после всемирной катастрофы. Пройдите путь снизу доверху, встретьтесь с тираном Кимастером и воздайте ему по заслугам.</p>
                 <p>Вы владеете холодным оружием лучше, чем кто‑либо из живших на Земле, и враги всегда превосходят вас числом, но не умением. Потрошите врагов мономолекулярным мечом-катаной, уклоняйтесь от пуль благодаря своим сверхъестественным рефлексам и применяйте разнообразные специальные техники, чтобы победить в бою.</p>
                 <p>Механика боя «один удар-одна смерть» делает схватки динамичными и интенсивными. Используйте свою превосходную подвижность (и часто встречающиеся контрольные точки), чтобы без страха вступить в бесконечный танец со смертью.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="reviewModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.89035 8L24 23.3345L23.3704 23.9734L8.26078 8.63894L8.89035 8Z" fill="white" />
+                    <path d="M8 23.3611L23.1097 8.0266L23.7392 8.66554L8.62957 24L8 23.3611Z" fill="white" />
+                </svg>
+            </button>
+            <div class="text48 font2">
+                Оставить отзыв
+            </div>
+            <form action="" class="review-form">
+                <fieldset class="fg">
+                    <input type="text" placeholder="Представьтесь">
+                    <span class="_bg"></span>
+                </fieldset>
+                <fieldset class="fg">
+                    <textarea placeholder="Текст отзыва"></textarea>
+                    <span class="_bg"></span>
+                </fieldset>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        Я даю согласие <a href="">на обработку</a> персональных данных.
+                    </label>
+                </div>
+                <div class="m-btn-hexagon__wrap">
+                    <button class="m-btn m-btn-red m-btn-hexagon">
+                        <span>
+                        Отправить
+                    </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="thankModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.89035 8L24 23.3345L23.3704 23.9734L8.26078 8.63894L8.89035 8Z" fill="white" />
+                    <path d="M8 23.3611L23.1097 8.0266L23.7392 8.66554L8.62957 24L8 23.3611Z" fill="white" />
+                </svg>
+            </button>
+            <div class="text48 font2">
+                Спасибо!
+            </div>
+            <div class="thank-info">
+                <div class="text18 gray-text">
+                    Ваш отзыв оставлен. После проверки модератором он будет опубликован на сайте.
+                </div>
+                <div class="m-btn-hexagon__wrap">
+                    <button class="_close-modal m-btn m-btn-red m-btn-hexagon">
+                        <span>
+                        Закрыть
+                    </span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
